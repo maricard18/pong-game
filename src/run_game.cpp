@@ -1,4 +1,4 @@
-#include "../main.hpp"
+#include "main.hpp"
 
 void CheckPlayerCollision(Ball &ball, Paddle &player)
 {
@@ -43,14 +43,14 @@ bool run_game(Ball &ball, Paddle &player, CpuPaddle &cpu)
 	DrawText(TextFormat("%i", ball.player_score), GetScreenWidth() / 2 - 100, 25, 80, WHITE);
 	DrawText(TextFormat("%i", ball.cpu_score), GetScreenWidth() / 2 + 60, 25, 80, WHITE);
 
-	if (ball.player_score == 1)
+	if (ball.player_score == MAX_SCORE)
 	{
 		DrawText("GAME OVER", GetScreenWidth() / 2 + 170, GetScreenHeight() / 2 - 20, 50, RED);
 		EndDrawing();
 
 		return false;
 	}
-	else if (ball.cpu_score == 1)
+	else if (ball.cpu_score == MAX_SCORE)
 	{
 		DrawText("GAME OVER", 170, GetScreenHeight() / 2 - 20, 50, RED);
 		EndDrawing();

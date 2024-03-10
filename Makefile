@@ -5,7 +5,7 @@ LDFLAGS = -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT
 LIBS = lib/libraylib.a
 EXEC = pong
 
-SRC =	main.cpp \
+SRC =	src/main.cpp \
 		src/Ball/Ball.cpp src/Paddle/Paddle.cpp src/Paddle/CpuPaddle.cpp \
 		src/run_game.cpp
 
