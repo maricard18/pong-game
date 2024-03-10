@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+# Others
+
+raylib
+pong
+*.o
+.vscode
