@@ -13,13 +13,13 @@ git clone https://github.com/maricard18/pong-game.git
 ## 🎥 **Demo**
 
 <p align="center">
-  <img src="./assets/sample.gif" width="100%">
+  <img src="./assets/demo.gif" width="100%">
 </p>
 
 ## 🕹️ **Usage**
 To play this game you can use the `make run` command. <br>
 This rule will generate a `pong` file, which is the zipped version of the game. <br>
-To launch the executable you also can run this command `./pong` <br>
+You can launch the executable by running the command `./pong` <br>
 
 ---
 > Feel free to ask me any questions through Slack (**maricard**). <br>
