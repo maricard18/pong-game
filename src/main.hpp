@@ -3,7 +3,7 @@
 #include <iostream>
 #include <unistd.h>
 
-#include "../lib/lib.h"
+#include "../lib/lib.hpp"
 #include "./Ball/Ball.hpp"
 #include "./Paddle/Paddle.hpp"
 #include "./Paddle/CpuPaddle.hpp"
