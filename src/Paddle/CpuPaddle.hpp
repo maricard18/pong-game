@@ -1,7 +1,9 @@
 #pragma once
 
 #include <iostream>
-#include "../../lib/lib.hpp
+#include "../../lib/lib.hpp"
+#include "Paddle.hpp"
+
 class CpuPaddle : public Paddle
 {
 public:
