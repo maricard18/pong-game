@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include "../../lib/lib.h"
+#include "../../lib/lib.hpp"
 
 class Ball
 {
