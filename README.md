@@ -6,6 +6,7 @@ It has been implemented in C++ using the [raylib](https://www.raylib.com/) graph
 To play this game you can use the `make run` command. <br>
 This rule will generate a `pong` file, which is the zipped version of the game. <br>
 You can launch the executable by running the command `./pong` <br>
+This project currently supports only **Mac** and **Linux** platforms.
 
 ## 🎥 **Demo**
 
