@@ -8,10 +8,12 @@ SRC =	src/main.cpp \
 		src/run_game.cpp
 
 UNAME_S := $(shell uname -s)
-ifeq ($(UNAME_S),Linux)
-	LDFLAGS = -lm -lpthread -ldl -lrt -lX11
-else ifeq ($(UNAME_S),Darwin)
-	LDFLAGS = -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL
+ifeq ($(UNAME_S), Linux)
+    LDFLAGS = -lm -lpthread -ldl -lrt -lX11
+else ifeq ($(UNAME_S), Darwin)
+    LDFLAGS = -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL
+else ifeq ($(OS), Windows_NT)
+    LDFLAGS = -lraylib -lopengl32 -lgdi32 -lwinmm
 endif
 
 LIBS = lib/libraylib.a
