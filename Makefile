@@ -10,13 +10,13 @@ SRC =	src/main.cpp \
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S), Linux)
     LDFLAGS = -lm -lpthread -ldl -lrt -lX11
+	LIBS = lib/libraylib_linux.a
 else ifeq ($(UNAME_S), Darwin)
     LDFLAGS = -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL
+	LIBS = lib/libraylib_macos.a
 else ifeq ($(OS), Windows_NT)
     LDFLAGS = -lraylib -lopengl32 -lgdi32 -lwinmm
 endif
-
-LIBS = lib/libraylib.a
 
 all: $(EXEC)
 
